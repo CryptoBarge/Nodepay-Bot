@@ -17,11 +17,11 @@ referral_codes:
 #                     Redirect Settings
 # =================================================================
 
-use_redirect_mode: false        # Use mail redirect
-redirect_email: ""
-redirect_password: ""
-redirect_imap_server: ""
-redirect_use_proxy: false
+use_redirect_mode: false        #Enable or disable use mail redirect
+redirect_email: ""              #Email where verification messages are sent   
+redirect_password: ""           #App password for external applications (not your regular email password)
+redirect_imap_server: ""        #Email Provider IMAP
+redirect_use_proxy: false       #Enable or disable use proxy for connect to IMAP server
 
 # =================================================================
 #                     Captcha Settings
