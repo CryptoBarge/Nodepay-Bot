@@ -1,0 +1,58 @@
+# =================================================================
+#                     Configuration Settings
+# =================================================================
+
+threads: 10                 # number of threads to run (min 1)
+browser_threads: 16             # number of browser threads to run (min 1)
+keepalive_interval: 55         # minutes
+proxy_rotation: false          # enable or disable proxy rotation (true, false)
+authorization: "browser"       # "api" or "browser"
+
+referral_codes:
+ - "UIASqC7zHgkN1MI0"
+  # - "UIASqC7zHgkN1MI1"
+  # - "UIASqC7zHgkN1MI2"
+
+# =================================================================
+#                     Redirect Settings
+# =================================================================
+
+use_redirect_mode: false        # Use mail redirect
+redirect_email: ""
+redirect_password: ""
+redirect_imap_server: ""
+redirect_use_proxy: false
+
+# =================================================================
+#                     Captcha Settings
+# =================================================================
+captcha_service: "capmonster"  # "capmonster", "capsolver", "twocaptcha"
+capmonster_api_key: ""         # API key from https://capmonster.cloud/
+capsolver_api_key: ""          # API key from https://api.capsolver.com
+twocaptcha_api_key: ""         # API key from https://2captcha.com/
+
+# =================================================================
+#                     Delay Settings
+# =================================================================
+delay_between_actions:
+  min: 0 # seconds (can be 0)
+  max: 0 # seconds (can be 0)
+
+# =================================================================
+#                     IMAP Settings
+# =================================================================
+
+# Email Provider IMAP Settings
+# --------------------------
+imap_settings:
+  gmail.com: imap.gmail.com          # Google Mail
+  yahoo.com: imap.mail.yahoo.com     # Yahoo Mail
+  outlook.com: imap-mail.outlook.com  # Microsoft Outlook
+  hotmail.com: imap-mail.outlook.com  # Microsoft Hotmail
+  mail.ru: imap.mail.ru              # Mail.ru
+  rambler.ru: imap.rambler.ru        # Rambler
+  gmx.com: imap.gmx.com              # GMX Mail
+  gmx.net: imap.gmx.net             # GMX Germany
+  gmx.de: imap.gmx.net              # GMX Germany (alternate domain)
+  icloud.com: imap.mail.me.com       # Apple iCloud
+  exaspefmail.ru: imap.firstmail.ltd
