@@ -1,5 +1,5 @@
-# 🕹Node Pay Bot
-
+# 🕹Nodepay-Bot
+> Forked by [**Jammer**](https://github.com/Jaammerr) 🚀
 ## 📁 Configuration Structure
 
 All configuration files are located in the `config` folder:
