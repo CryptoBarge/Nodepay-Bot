@@ -1,5 +1,15 @@
 # 🕹Nodepay-Bot
 > Forked by [**Jammer**](https://github.com/Jaammerr) 🚀
+
+<div>
+<p align="center">
+  <img src="./image/image.png" alt="Nodepay-Bot Console" width="600"/>
+  
+  <p align="center">
+    <a href="https://t.me/BargeCrypto"><img src="https://img.shields.io/badge/CryptoBarge_|_Subscribe_⚓-5B00FF?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Channel"></a>
+    <a href="https://t.me/+nbpTp74UTnVmMmM6"><img src="https://img.shields.io/badge/Crypto$БАРЖА_|_Chat_💬-5B00FF?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Chat"></a>
+</div>
+
 ## 📁 Configuration Structure
 
 All configuration files are located in the `config` folder:
