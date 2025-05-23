@@ -96,7 +96,7 @@ https://www.python.org/downloads/
 
 2. **Clone the repository:**
 ```bash
-git clone this-repository
+git clone https://github.com/CryptoBarge/Nodepay-Bot.git
 ```
 
 3. **Configure the bot:**
