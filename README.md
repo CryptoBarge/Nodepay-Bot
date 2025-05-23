@@ -29,16 +29,23 @@ email:password
 ```
 
 3. **verify.txt** - Accounts for verification
+
+*When `use_redirect_mode` is `false`:*
 ```
 email:email_password:account_password
 ```
+*When `use_redirect_mode` is `true`:*
+```
+email:account_password
+```
 
 4. **bind_wallet.txt** - Accounts for wallet binding
-When `use_redirect_mode` is `false`:
+
+*When `use_redirect_mode` is `false`:*
 ```
 email:email_password:account_password:sol_private_key
 ```
-When `use_redirect_mode` is `true`:
+*When `use_redirect_mode` is `true`:*
 ```
 email:email_password:account_password
 ```
