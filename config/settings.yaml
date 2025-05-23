@@ -9,7 +9,7 @@ proxy_rotation: false          # enable or disable proxy rotation (true, false)
 authorization: "browser"       # "api" or "browser"
 
 referral_codes:
- - "UIASqC7zHgkN1MI0"
+ - "UIASqC7zHgkN1MI1"
   # - "UIASqC7zHgkN1MI1"
   # - "UIASqC7zHgkN1MI2"
 
