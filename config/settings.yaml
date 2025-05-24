@@ -17,7 +17,7 @@ referral_codes:
 #                     Redirect Settings
 # =================================================================
 
-use_redirect_mode: false        #Enable or disable use mail redirect
+use_redirect_mode: true        #Enable or disable use mail redirect
 redirect_email: ""              #Email where verification messages are sent   
 redirect_password: ""           #App password for external applications (not your regular email password)
 redirect_imap_server: ""        #Email Provider IMAP
