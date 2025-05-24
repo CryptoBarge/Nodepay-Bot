@@ -10,11 +10,15 @@
     <a href="https://t.me/+nbpTp74UTnVmMmM6"><img src="https://img.shields.io/badge/Crypto$БАРЖА_|_Chat_💬-5B00FF?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Chat"></a>
 </div>
 
+---
+
 ## 📁 Configuration Structure
 
 All configuration files are located in the `config` folder:
 - Bot settings: `config/settings.yaml`
 - Account files: `config/data/`
+
+---
 
 ### Account File Formats:
 
@@ -80,6 +84,7 @@ Supported formats:
 
 Supported types: http, socks5
 ```
+---
 
 ## ⚙️ Settings (config/settings.yaml)
 
@@ -104,29 +109,52 @@ Note:
 - Browser threads determine how many accounts can be processed simultaneously
 - Authorization method affects how the bot interacts with the service
 
+---
+
+## 🧩 Modules
+
+- Register  
+- Farm  
+- Exports stats  
+- Verify email  
+- Bind wallet
+- Bind discord
+- Bind Twitter  
+- Claim medals
+- Clomplete missions
+- Change email  
+
+---
+
 ## 🚀 Getting Started
 
-1. **Install Python 3.11 or higher:**
-```bash
-https://www.python.org/downloads/
-```
-
-2. **Clone the repository:**
+1. **Clone the repository:**
 ```bash
 git clone https://github.com/CryptoBarge/Nodepay-Bot.git
 ```
 
-3. **Configure the bot:**
+2. **Configure the bot:**
    - Fill in the settings in `config/settings.yaml`
    - Add your accounts to the appropriate files in `config/data/`
-   - Add proxies to `config/data/proxies.txt` (optional)
+   - Add proxies to `config/data/proxies.txt`
 
-4. **Run the bot:**
+3. **Run the bot:**
 Simply double-click `run.exe` to start the bot.
+
+---
 
 ## 📝 Notes
 - Make sure all account files are properly formatted
-- Keep your API keys and tokens secure
 - Monitor the bot's operation through the console output
 - The bot will automatically handle retries for failed operations
-- Proxy rotation is automatic when enabled
+- Proxy rotation is automatic when disable
+
+---
+
+## 🔒 Code Availability
+
+The source code of **Nodepay-Bot** is closed.
+
+This decision is intentional — the system includes unique technical solutions that took a lot of time and effort to develop. Opening the code would lead to uncontrolled resale and misuse of the software, which i aim to avoid in order to maintain quality and integrity.
+
+Thank you for understanding.

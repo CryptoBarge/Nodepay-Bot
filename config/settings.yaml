@@ -2,14 +2,14 @@
 #                     Configuration Settings
 # =================================================================
 
-threads: 10                 # number of threads to run (min 1)
+threads: 10                     # number of threads to run (min 1)
 browser_threads: 16             # number of browser threads to run (min 1)
-keepalive_interval: 55         # minutes
-proxy_rotation: false          # enable or disable proxy rotation (true, false)
-authorization: "browser"       # "api" or "browser"
+keepalive_interval: 55          # minutes
+proxy_rotation: false           # enable or disable proxy rotation (true, false)
+authorization: "browser"        # "api" or "browser"
 
 referral_codes:
- - "UIASqC7zHgkN1MI1"
+  - "UIASqC7zHgkN1MI0"
   # - "UIASqC7zHgkN1MI1"
   # - "UIASqC7zHgkN1MI2"
 
@@ -17,11 +17,11 @@ referral_codes:
 #                     Redirect Settings
 # =================================================================
 
-use_redirect_mode: true        #Enable or disable use mail redirect
-redirect_email: ""              #Email where verification messages are sent   
-redirect_password: ""           #App password for external applications (not your regular email password)
-redirect_imap_server: ""        #Email Provider IMAP
-redirect_use_proxy: false       #Enable or disable use proxy for connect to IMAP server
+use_redirect_mode: false        # Enable or disable use mail redirect
+redirect_email: ""              # Email where verification messages are sent   
+redirect_password: ""           # App password for external applications (not your regular email password)
+redirect_imap_server: ""        # Email Provider IMAP
+redirect_use_proxy: false       # Enable or disable use proxy for connect to IMAP server
 
 # =================================================================
 #                     Captcha Settings
