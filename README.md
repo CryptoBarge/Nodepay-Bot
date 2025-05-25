@@ -1,5 +1,5 @@
 # 🕹Nodepay-Bot
-> Forked by [**Jammer**](https://github.com/Jaammerr) 🚀
+> Forked by [**Jammer**](https://github.com/Jaammerr) 🌿
 
 <div>
 <p align="center">
@@ -9,6 +9,56 @@
     <a href="https://t.me/BargeCrypto"><img src="https://img.shields.io/badge/CryptoBarge_|_Subscribe_⚓-5B00FF?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Channel"></a>
     <a href="https://t.me/+nbpTp74UTnVmMmM6"><img src="https://img.shields.io/badge/Crypto$БАРЖА_|_Chat_💬-5B00FF?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Chat"></a>
 </div>
+
+---
+
+## 🔓 Authorization Modes
+
+The `authorization` setting in `settings.yaml` can be set to `"api"` or `"browser"`.
+
+▫️ **`"api"`** – Authorization is performed via API requests.  
+Requires selecting a `captcha_service` with a pre-funded balance.  
+A reCAPTCHA token is used for login and is valid for **14 days**.  
+Each new token consumes captcha balance.
+
+▫️ **`"browser"`** – Authorization is performed by launching a Chromium-based browser on your device.  
+No captcha cost — only proxy traffic is used.  
+On average: **~2 GB per 2000 accounts**.
+
+💡 `browser_threads` defines how many browser windows can run in parallel.  
+Choose the value based on your system’s performance — powerful devices can handle **8 to 16** browsers simultaneously.
+
+> 🔧 Note: `threads` and `browser_threads` can be configured independently.
+
+> 📊 Farming 2000 accounts uses ~35 MB/s per hour.
+
+---
+
+## ⚙️ Settings (config/settings.yaml)
+
+| Parameter            | Description                                           |
+|---------------------|-------------------------------------------------------|
+| threads             | Number of accounts to run simultaneously              |
+| browser_threads     | Number of browser threads to run                      |
+| authorization       | Authorization method ("api" or "browser")             |
+| captcha_service     | Captcha solving service (capmonster/capsolver/twocaptcha) |
+| keepalive_interval  | Delay between keepalive requests (in seconds)         |
+| referral_code       | Your referral code                                   |
+| delay_between_actions | Delay between actions (in seconds)                 |
+| use_redirect_mode   | Enable/disable redirect mode for wallet binding      |
+| use_proxies         | Enable/disable proxy usage                           |
+| proxy_rotation      | Enable/disable proxy rotation                        |
+
+---
+
+**Note:**
+- When `use_redirect_mode` is enabled, wallet binding will use a redirect-based approach  
+- Proxy settings are only used when `use_proxies` is enabled  
+- When `proxy_rotation` is enabled, a new proxy will be used for each account or action 
+- **Proxies for rotation must be listed in `rotation_proxies.txt`**
+- Choose the appropriate captcha service and provide its corresponding API key  
+- Browser threads determine how many accounts can be processed simultaneously  
+- Authorization method affects how the bot interacts with the service  
 
 ---
 
@@ -22,17 +72,17 @@ All configuration files are located in the `config` folder:
 
 ### Account File Formats:
 
-1. **register.txt** - Accounts for registration
+1. **register.txt** – **Accounts for registration**
 ```
 email:password
 ```
 
-2. **farm.txt** - Accounts for farming
+2. **farm.txt** – **Accounts for farming**
 ```
 email:password
 ```
 
-3. **verify.txt** - Accounts for verification
+3. **verify.txt** – **Accounts for verification**
 
 *When `use_redirect_mode` is `false`:*
 ```
@@ -43,7 +93,7 @@ email:email_password:account_password
 email:account_password
 ```
 
-4. **bind_wallet.txt** - Accounts for wallet binding
+4. **bind_wallet.txt** – **Accounts for wallet binding**
 
 *When `use_redirect_mode` is `false`:*
 ```
@@ -54,27 +104,27 @@ email:email_password:account_password:sol_private_key
 email:email_password:account_password
 ```
 
-5. **bind_discord.txt** - Accounts for Discord binding
+5. **bind_discord.txt** – **Accounts for Discord binding**
 ```
 email:account_password:discord_token
 ```
 
-6. **bind_twitter.txt** - Accounts for Twitter binding
+6. **bind_twitter.txt** – **Accounts for Twitter binding**
 ```
 email:account_password:twitter_token
 ```
 
-7. **claim_medals.txt** - Accounts for claiming medals
+7. **claim_medals.txt** – **Accounts for claiming medals**
 ```
 email:password
 ```
 
-8. **complete_missions.txt** - Accounts for completing missions
+8. **complete_missions.txt** – **Accounts for completing missions**
 ```
 email:password
 ```
 
-### Proxy Configuration (data/proxies.txt):
+### Proxy Configuration (data/proxies.txt and data/rotation_proxies.txt):
 ```
 Supported formats:
 - type://user:pass@ip:port
@@ -84,31 +134,6 @@ Supported formats:
 
 Supported types: http, socks5
 ```
----
-
-## ⚙️ Settings (config/settings.yaml)
-
-| Parameter            | Description                                           |
-|---------------------|-------------------------------------------------------|
-| threads             | Number of accounts to run simultaneously              |
-| browser_threads     | Number of browser threads to run                      |
-| authorization       | Authorization method ("api" or "browser")             |
-| captcha_service     | Captcha solving service (capmonster/capsolver/twocaptcha) |
-| keepalive_interval  | Delay between keepalive requests (in seconds)         |
-| referral_code       | Your referral code                                   |
-| user_agents         | User agent configuration ("custom" to use from file)  |
-| delay_between_actions | Delay between actions (in seconds)                 |
-| use_redirect_mode   | Enable/disable redirect mode for wallet binding      |
-| use_proxies         | Enable/disable proxy usage                           |
-| retry_attempts      | Number of retry attempts for failed operations       |
-
-Note: 
-- When `use_redirect_mode` is enabled, wallet binding will use a redirect-based approach
-- Proxy settings are only used when `use_proxies` is enabled
-- Choose the appropriate captcha service and provide its corresponding API key
-- Browser threads determine how many accounts can be processed simultaneously
-- Authorization method affects how the bot interacts with the service
-
 ---
 
 ## 🧩 Modules
@@ -147,7 +172,6 @@ Simply double-click `run.exe` to start the bot.
 - Make sure all account files are properly formatted
 - Monitor the bot's operation through the console output
 - The bot will automatically handle retries for failed operations
-- Proxy rotation is automatic when disable
 
 ---
 
