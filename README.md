@@ -1,5 +1,5 @@
 # 🕹Nodepay-Bot
-> Forked by [**Jammer**](https://github.com/Jaammerr) 🌿
+> Forked from [**Jammer**](https://github.com/Jaammerr) 🌿
 
 <div>
 <p align="center">
